@@ -1,0 +1,22 @@
+Feature: Gmail Login Feature
+
+# Without examples keywords:-
+
+#Scenario: Gmail Login Test Scenario
+
+#Given user is on gmail page
+#Then user enter "dhappy.123d.123@gmail.com" and "Donkey@123" 
+#And user again click on next button
+
+
+#With Examples Keyword:-we need to use scenario outline with examples
+
+Scenario Outline: Gmail Login Test Scenario
+
+Given user is on gmail page
+Then user enter "<username>" and "<password>"
+And user again click on next button
+
+Examples:
+	| username |				 password |
+	| dhappy.123d.123@gmail.com | Donkey@123 |
